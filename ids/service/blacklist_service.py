@@ -3,7 +3,7 @@ import json
 
 def is_blacklisted(ip):
     for record in all_blacklisted_records():
-        if int(record['id']) == int(ip):
+        if record['ip'] == ip:
             return True
     return False
 
